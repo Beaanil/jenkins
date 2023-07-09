@@ -34,7 +34,7 @@ pipeline {
         
         stage("Push to Git Repository") {
             steps {
-                withCredentials([gitUsernamePassword(credentialsId: 'githubCred', gitToolName: 'Default')]) {
+                withCredentials([gitUsernamePassword(credentialsId: '3ffdf091-54d0-498a-8043-d8e3952496e1', gitToolName: 'Default')]) {
                     sh "git push -u origin master"
                 }
             }
