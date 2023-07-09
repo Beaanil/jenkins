@@ -20,7 +20,7 @@ pipeline {
             }
         stage('Buffer Time') {
             steps {
-                sleep(time: 1, unit: 'MINUTES')
+                sleep(time: 20, unit: 'SECONDS')
             }
         }
 
